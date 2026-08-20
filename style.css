@@ -1,0 +1,158 @@
+/* Base Styles - Mobile First (أصغر من 300px وفيما فوق) */
+body {
+    background-image: url("https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Media-Block-B_DII-Promo_1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("MinecraftTen.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Minecraftt";
+    src: url("MinecraftRegular.otf") format("truetype");
+}
+
+
+#title, #title2, #title3 {
+    color: #00ee0c;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Minecraft";
+    margin: 20px 0 10px 0;
+}
+
+.description, .description1 {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: left;
+    font-family: "Minecraftt";
+    margin-top: 10px;
+}
+
+.minecraft-text, .mc-worlds, #video {
+    position: relative;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.mc-photo {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 300px) {
+    #title, #title2, #title3 {
+        font-size: 26px;
+    }
+    .minecraft-text, .mc-worlds, #video {
+        width: 95%;
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #title, #title2, #title3 {
+        font-size: 30px;
+    }
+    .minecraft-text, .mc-worlds, #video {
+        width: 85%;
+        padding: 20px;
+        font-size: 16px;
+    }
+    .mc-photo {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    #title, #title2, #title3 {
+        font-size: 34px;
+    }
+    .minecraft-text, .mc-worlds, #video {
+        width: 75%;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .mc-photo {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #title, #title2, #title3 {
+        font-size: 36px;
+    }
+    .minecraft-text, .mc-worlds {
+        width: 60%;
+        padding: 25px;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    #video {
+        width: 60%;
+        padding: 25px;
+    }
+    .mc-photo {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .minecraft-text, .mc-worlds, #video {
+        width: 52%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .minecraft-text, .mc-worlds, #video {
+        max-width: 800px;
+        margin-left: 60px;
+    }
+    #title, #title2, #title3 {
+        font-size: 40px;
+    }
+}
+#creator, #website {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Minecraftt";
+    margin: 20px 0px 10px 100px;
+}
+#website a {
+    color: #00ee0c; /* تغيير لون الرابط للون الأخضر ليناسب ثيم اللعبة */
+    text-decoration: none;
+}
+@media only screen and (min-width: 576px) {
+    #creator, #website {
+    font-size: 18px;
+}
+}
+
+@media only screen and (min-width: 992px) {
+    #creator, #website {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 0px 10px 60px;
+}
+}
