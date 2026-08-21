@@ -1,4 +1,4 @@
-/* Base Styles - Mobile First (أصغر من 300px وفيما فوق) */
+
 body {
     background-image: url("https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Media-Block-B_DII-Promo_1920x1080.jpg");
     background-size: cover;
@@ -140,7 +140,7 @@ body {
     margin: 20px 0px 10px 100px;
 }
 #website a {
-    color: #00ee0c; /* تغيير لون الرابط للون الأخضر ليناسب ثيم اللعبة */
+    color: #00ee0c;
     text-decoration: none;
 }
 @media only screen and (min-width: 576px) {
