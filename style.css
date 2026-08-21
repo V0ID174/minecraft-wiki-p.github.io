@@ -214,75 +214,6 @@ h2 {
     color: purple
 }
 
-@media only screen and (min-width: 300px) {
-    #title, #title2, #title3 {
-        font-size: 26px;
-    }
-    .minecraft-text, .mc-worlds{
-        width: 95%;
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    #title, #title2, #title3 {
-        font-size: 30px;
-    }
-    .minecraft-text, .mc-worlds{
-        width: 85%;
-        font-size: 16px;
-    }
-    .mc-photo {
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #title, #title2, #title3 {
-        font-size: 34px;
-    }
-    .minecraft-text, .mc-worlds, #video {
-        width: 75%;
-        font-size: 17px;
-        line-height: 1.6;
-    }
-    .mc-photo {
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    #title, #title2, #title3 {
-        font-size: 36px;
-    }
-    .minecraft-text, .mc-worlds {
-        width: 60%;
-        font-size: 18px;
-        line-height: 1.7;
-    }
-    #video {
-        width: 60%;
-    }
-    .mc-photo {
-        width: 60%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .minecraft-text, .mc-worlds, #video {
-        width: 52%;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .minecraft-text, .mc-worlds, #video {
-        max-width: 800px;
-
-    }
-    #title, #title2, #title3 {
-        font-size: 40px;
-    }
-}
 #creator, #website {
     color: #ffffff;
     font-size: 20px;
@@ -292,15 +223,317 @@ h2 {
     color: #00ee0c;
     text-decoration: none;
 }
-@media only screen and (min-width: 576px) {
-    #creator, #website {
-    font-size: 18px;
+
+@media only screen and (max-width: 575px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #title {
+        font-size: 30px;
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .introduction {
+        width: 90%;
+        margin: 25px auto;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .worlds,
+    .modes,
+    .trailer {
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .section-description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .world-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .world-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 400px;
+    }
+
+    #overworld-image,
+    #nether-image,
+    #end-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        text-align: center;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .modes-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .mode-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #video {
+        width: 100%;
+        max-width: 500px;
+        margin: 25px auto;
+        padding: 8px;
+    }
+
+    #video-iframe {
+        width: 100%;
+        height: 220px;
+    }
+
+
+    #website,
+    #creator {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 15px;
+    }
+
 }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #title {
+        font-size: 36px;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .introduction {
+        width: 85%;
+        max-width: 750px;
+        margin: 35px auto;
+        text-align: center;
+    }
+
+    .worlds,
+    .modes,
+    .trailer {
+        width: 85%;
+        max-width: 900px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .world-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .world-card {
+        width: 45%;
+        min-width: 280px;
+        max-width: 400px;
+    }
+
+    #overworld-image,
+    #nether-image,
+    #end-image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .modes-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .mode-card {
+        width: 45%;
+        max-width: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #video {
+        width: 90%;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 12px;
+    }
+
+    #video-iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+
+    #website,
+    #creator {
+        width: 85%;
+        margin: 25px auto;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
-    #creator, #website {
-    font-size: 20px;
-    text-align: left;
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #title {
+        font-size: 46px;
+        text-align: center;
+        margin: 35px 0;
+    }
+
+    .introduction {
+        width: 80%;
+        max-width: 900px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .worlds,
+    .modes,
+    .trailer {
+        width: 85%;
+        max-width: 1200px;
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .world-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .world-card {
+        width: 31%;
+        min-width: 280px;
+        max-width: 380px;
+    }
+
+    #overworld-image,
+    #nether-image,
+    #end-image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .modes-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .mode-card {
+        width: 45%;
+        max-width: 400px;
+        padding: 25px;
+        text-align: center;
+    }
+
+    #video {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    #video-iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    #website,
+    #creator {
+        width: 85%;
+        margin: 25px auto;
+        text-align: center;
+    }
+
 }
+
+@media only screen and (min-width: 1400px) {
+    .introduction {
+        max-width: 900px;
+    }
+    .worlds,
+    .modes,
+    .trailer {
+        max-width: 1200px;
+    }
+    .world-card {
+        max-width: 370px;
+    }
+    #video {
+        max-width: 900px;
+    }
 }
